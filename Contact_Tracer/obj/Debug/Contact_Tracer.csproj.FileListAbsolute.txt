@@ -1,0 +1,10 @@
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\bin\Debug\Contact_Tracer.exe.config
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\bin\Debug\Contact_Tracer.exe
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\bin\Debug\Contact_Tracer.pdb
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.csproj.AssemblyReference.cache
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.Form1.resources
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.Properties.Resources.resources
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.csproj.GenerateResource.cache
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.exe
+C:\Users\Michael\Desktop\C#\Contact_Tracer\Contact_Tracer\obj\Debug\Contact_Tracer.pdb

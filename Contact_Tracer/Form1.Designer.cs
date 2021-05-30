@@ -36,6 +36,7 @@ namespace Contact_Tracer
             this.MidNameBox = new System.Windows.Forms.TextBox();
             this.MidNameLabel = new System.Windows.Forms.Label();
             this.btnOky = new System.Windows.Forms.Button();
+            this.Reader = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LstNameBox
@@ -88,19 +89,29 @@ namespace Contact_Tracer
             // 
             // btnOky
             // 
-            this.btnOky.Location = new System.Drawing.Point(131, 415);
+            this.btnOky.Location = new System.Drawing.Point(12, 415);
             this.btnOky.Name = "btnOky";
-            this.btnOky.Size = new System.Drawing.Size(75, 23);
+            this.btnOky.Size = new System.Drawing.Size(112, 23);
             this.btnOky.TabIndex = 4;
             this.btnOky.Text = "Ok";
             this.btnOky.UseVisualStyleBackColor = true;
             this.btnOky.Click += new System.EventHandler(this.btnOky_Click);
+            // 
+            // Reader
+            // 
+            this.Reader.Location = new System.Drawing.Point(209, 415);
+            this.Reader.Name = "Reader";
+            this.Reader.Size = new System.Drawing.Size(112, 23);
+            this.Reader.TabIndex = 6;
+            this.Reader.Text = "Read Data";
+            this.Reader.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.Reader);
             this.Controls.Add(this.btnOky);
             this.Controls.Add(this.MidNameLabel);
             this.Controls.Add(this.MidNameBox);
@@ -108,9 +119,11 @@ namespace Contact_Tracer
             this.Controls.Add(this.FrstNameBox);
             this.Controls.Add(this.LstNameLabel);
             this.Controls.Add(this.LstNameBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,6 +139,7 @@ namespace Contact_Tracer
         private System.Windows.Forms.TextBox MidNameBox;
         private System.Windows.Forms.Label MidNameLabel;
         private System.Windows.Forms.Button btnOky;
+        private System.Windows.Forms.Button Reader;
     }
 }
 

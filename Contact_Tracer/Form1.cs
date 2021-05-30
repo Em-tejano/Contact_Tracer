@@ -23,22 +23,26 @@ namespace Contact_Tracer
             string NameVar;
             if (MidNameBox.Text.Length > 0)
             {
-                NameVar = LstNameBox.Text + "," + FrstNameBox.Text + "," + MidNameBox;
+                NameVar = LstNameBox.Text + ", " + FrstNameBox.Text + ", " + MidNameBox;
+                LstNameBox.Text = "";
+                FrstNameBox.Text = "";
+                MidNameBox.Text = "";
             }
             else
             {
-                NameVar = LstNameBox.Text + "," + FrstNameBox.Text;
+                NameVar = LstNameBox.Text + ", " + FrstNameBox.Text;
+                LstNameBox.Text = "";
+                FrstNameBox.Text = "";
             }
-            StreamWriter outputfile;
-            outputfile = File.AppendText("Data.txt");
-            StreamReader filetxt;
-            filetxt = File.OpenText("Data.txt");
-            if (File.Exists(NameVar))
-            {
-
-            }
-            outputfile.WriteLine("Name: " + NameVar);
-
+            string pth = Environment.CurrentDirectory + "/" + "List";
+            DirectoryInfo Newpth;
+            Newpth = Directory.CreateDirectory(pth);
+            StreamWriter OutputFile;
+            DateTime date = DateTime.Now;
+            OutputFile = File.AppendText(Newpth + "/" + NameVar);
+            OutputFile.WriteLine("=====" + date + "=====");
+            OutputFile.WriteLine();
+            
         }
     }
 }

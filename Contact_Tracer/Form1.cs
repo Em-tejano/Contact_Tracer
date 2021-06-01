@@ -91,10 +91,10 @@ namespace Contact_Tracer
                     try
                     {
                         fileReader = File.OpenText(pth + "/" + NameVar + ".txt");
-                        //while (!fileReader.EndOfStream)
-                        //{
+                        while (!fileReader.EndOfStream)
+                        {
                             ListlistBox.Items.Add(fileReader.ReadLine() + "\n");
-                        //}
+                        }
                     }
                     catch (Exception)
                     {

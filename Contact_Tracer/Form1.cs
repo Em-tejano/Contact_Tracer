@@ -61,41 +61,72 @@ namespace Contact_Tracer
             ProvinceBox.Visible = false;
             provinceLabel.Visible = false;
             Instructions.Visible = false;
+            btnOky.Visible = false;
+            btnAdd.Visible = true;
+            ListlistBox.Visible = true;
             string NameVar;
             if (MidNameBox.Text.Length > 0)
             {
                 NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper() + ", " + MidNameBox.Text.ToUpper();
-                LstNameBox.Text = "";
-                FrstNameBox.Text = "";
-                MidNameBox.Text = "";
+                //LstNameBox.Text = "";
+                //FrstNameBox.Text = "";
+                //MidNameBox.Text = "";
             }
             else
             {
                 NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper();
-                LstNameBox.Text = "";
-                FrstNameBox.Text = "";
+                //LstNameBox.Text = "";
+                //FrstNameBox.Text = "";
             }
-            if (NameVar.Length == 0 || NameVar.Equals(null))
+            string pth = Environment.CurrentDirectory + "/" + "List";
+            StreamReader fileReader;
+            if (NameVar.Length > 2)
             {
-                if (NameVar.Length == 0)
+                if (!Directory.Exists(Environment.CurrentDirectory + "/" + "List"))
                 {
-                    MessageBox.Show("Input the name first!");
+                    MessageBox.Show("Input a data first!");
                 }
                 else
                 {
-                    MessageBox.Show("Input data first!");
+                    try
+                    {
+                        fileReader = File.OpenText(pth + "/" + NameVar + ".txt");
+                        //while (!fileReader.EndOfStream)
+                        //{
+                            ListlistBox.Items.Add(fileReader.ReadLine() + "\n");
+                        //}
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("The name does not exist in the database!");
+                    }
                 }
+                
             }
-            else 
+            else
             {
-                string pth = Environment.CurrentDirectory + "/" + "List";
-                StreamReader fileReader;
-                fileReader = File.OpenText(pth + "/" + NameVar + ".txt");
-                while (!fileReader.EndOfStream)
-                {
-                    DataLabel.Text += fileReader.ReadLine() + "\n";
-                } 
+                
             }
+            LstNameBox.Text = "";
+            FrstNameBox.Text = "";
+            MidNameBox.Text = "";
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AgeBox.Visible = true;
+            AgeLabel.Visible = true;
+            BrgyBox.Visible = true;
+            brgyLabel.Visible = true;
+            CityBox.Visible = true;
+            cityLabel.Visible = true;
+            ProvinceBox.Visible = true;
+            provinceLabel.Visible = true;
+            Instructions.Visible = true;
+            btnOky.Visible = true;
+            btnAdd.Visible = false;
+            ListlistBox.Visible = false;
+            ListlistBox.Items.Clear();
         }
     }
 }

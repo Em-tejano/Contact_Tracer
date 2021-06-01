@@ -45,8 +45,9 @@ namespace Contact_Tracer
             this.provinceLabel = new System.Windows.Forms.Label();
             this.cityLabel = new System.Windows.Forms.Label();
             this.brgyLabel = new System.Windows.Forms.Label();
-            this.DataLabel = new System.Windows.Forms.Label();
             this.Instructions = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.ListlistBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // LstNameBox
@@ -109,7 +110,7 @@ namespace Contact_Tracer
             // 
             // Reader
             // 
-            this.Reader.Location = new System.Drawing.Point(209, 415);
+            this.Reader.Location = new System.Drawing.Point(212, 415);
             this.Reader.Name = "Reader";
             this.Reader.Size = new System.Drawing.Size(112, 23);
             this.Reader.TabIndex = 9;
@@ -181,14 +182,6 @@ namespace Contact_Tracer
             this.brgyLabel.TabIndex = 14;
             this.brgyLabel.Text = "Barangay";
             // 
-            // DataLabel
-            // 
-            this.DataLabel.AutoSize = true;
-            this.DataLabel.Location = new System.Drawing.Point(9, 59);
-            this.DataLabel.Name = "DataLabel";
-            this.DataLabel.Size = new System.Drawing.Size(0, 17);
-            this.DataLabel.TabIndex = 15;
-            // 
             // Instructions
             // 
             this.Instructions.AutoSize = true;
@@ -198,13 +191,37 @@ namespace Contact_Tracer
             this.Instructions.TabIndex = 16;
             this.Instructions.Text = "Type the name of the person to track.";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(12, 415);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(112, 23);
+            this.btnAdd.TabIndex = 17;
+            this.btnAdd.Text = "Add Data";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Visible = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // ListlistBox
+            // 
+            this.ListlistBox.FormattingEnabled = true;
+            this.ListlistBox.ItemHeight = 16;
+            this.ListlistBox.Location = new System.Drawing.Point(12, 57);
+            this.ListlistBox.Name = "ListlistBox";
+            this.ListlistBox.Size = new System.Drawing.Size(312, 356);
+            this.ListlistBox.TabIndex = 18;
+            this.ListlistBox.Visible = false;
+            // 
             // Form1
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.ListlistBox);
+            this.Controls.Add(this.Reader);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.Instructions);
-            this.Controls.Add(this.DataLabel);
             this.Controls.Add(this.brgyLabel);
             this.Controls.Add(this.cityLabel);
             this.Controls.Add(this.provinceLabel);
@@ -213,7 +230,6 @@ namespace Contact_Tracer
             this.Controls.Add(this.CityBox);
             this.Controls.Add(this.AgeLabel);
             this.Controls.Add(this.AgeBox);
-            this.Controls.Add(this.Reader);
             this.Controls.Add(this.btnOky);
             this.Controls.Add(this.MidNameLabel);
             this.Controls.Add(this.MidNameBox);
@@ -250,8 +266,9 @@ namespace Contact_Tracer
         private System.Windows.Forms.Label provinceLabel;
         private System.Windows.Forms.Label cityLabel;
         private System.Windows.Forms.Label brgyLabel;
-        private System.Windows.Forms.Label DataLabel;
         private System.Windows.Forms.Label Instructions;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ListBox ListlistBox;
     }
 }
 

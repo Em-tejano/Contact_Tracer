@@ -37,6 +37,16 @@ namespace Contact_Tracer
             this.MidNameLabel = new System.Windows.Forms.Label();
             this.btnOky = new System.Windows.Forms.Button();
             this.Reader = new System.Windows.Forms.Button();
+            this.AgeBox = new System.Windows.Forms.TextBox();
+            this.AgeLabel = new System.Windows.Forms.Label();
+            this.CityBox = new System.Windows.Forms.TextBox();
+            this.BrgyBox = new System.Windows.Forms.TextBox();
+            this.ProvinceBox = new System.Windows.Forms.TextBox();
+            this.provinceLabel = new System.Windows.Forms.Label();
+            this.cityLabel = new System.Windows.Forms.Label();
+            this.brgyLabel = new System.Windows.Forms.Label();
+            this.DataLabel = new System.Windows.Forms.Label();
+            this.Instructions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstNameBox
@@ -92,7 +102,7 @@ namespace Contact_Tracer
             this.btnOky.Location = new System.Drawing.Point(12, 415);
             this.btnOky.Name = "btnOky";
             this.btnOky.Size = new System.Drawing.Size(112, 23);
-            this.btnOky.TabIndex = 4;
+            this.btnOky.TabIndex = 8;
             this.btnOky.Text = "Ok";
             this.btnOky.UseVisualStyleBackColor = true;
             this.btnOky.Click += new System.EventHandler(this.btnOky_Click);
@@ -102,15 +112,107 @@ namespace Contact_Tracer
             this.Reader.Location = new System.Drawing.Point(209, 415);
             this.Reader.Name = "Reader";
             this.Reader.Size = new System.Drawing.Size(112, 23);
-            this.Reader.TabIndex = 6;
+            this.Reader.TabIndex = 9;
             this.Reader.Text = "Read Data";
             this.Reader.UseVisualStyleBackColor = true;
+            this.Reader.Click += new System.EventHandler(this.Reader_Click);
+            // 
+            // AgeBox
+            // 
+            this.AgeBox.Location = new System.Drawing.Point(12, 57);
+            this.AgeBox.Name = "AgeBox";
+            this.AgeBox.Size = new System.Drawing.Size(100, 22);
+            this.AgeBox.TabIndex = 4;
+            // 
+            // AgeLabel
+            // 
+            this.AgeLabel.AutoSize = true;
+            this.AgeLabel.Location = new System.Drawing.Point(118, 62);
+            this.AgeLabel.Name = "AgeLabel";
+            this.AgeLabel.Size = new System.Drawing.Size(33, 17);
+            this.AgeLabel.TabIndex = 8;
+            this.AgeLabel.Text = "Age";
+            // 
+            // CityBox
+            // 
+            this.CityBox.Location = new System.Drawing.Point(118, 85);
+            this.CityBox.Name = "CityBox";
+            this.CityBox.Size = new System.Drawing.Size(100, 22);
+            this.CityBox.TabIndex = 6;
+            // 
+            // BrgyBox
+            // 
+            this.BrgyBox.Location = new System.Drawing.Point(12, 85);
+            this.BrgyBox.Name = "BrgyBox";
+            this.BrgyBox.Size = new System.Drawing.Size(100, 22);
+            this.BrgyBox.TabIndex = 5;
+            // 
+            // ProvinceBox
+            // 
+            this.ProvinceBox.Location = new System.Drawing.Point(224, 85);
+            this.ProvinceBox.Name = "ProvinceBox";
+            this.ProvinceBox.Size = new System.Drawing.Size(100, 22);
+            this.ProvinceBox.TabIndex = 7;
+            // 
+            // provinceLabel
+            // 
+            this.provinceLabel.AutoSize = true;
+            this.provinceLabel.Location = new System.Drawing.Point(243, 110);
+            this.provinceLabel.Name = "provinceLabel";
+            this.provinceLabel.Size = new System.Drawing.Size(63, 17);
+            this.provinceLabel.TabIndex = 12;
+            this.provinceLabel.Text = "Province";
+            // 
+            // cityLabel
+            // 
+            this.cityLabel.AutoSize = true;
+            this.cityLabel.Location = new System.Drawing.Point(152, 110);
+            this.cityLabel.Name = "cityLabel";
+            this.cityLabel.Size = new System.Drawing.Size(31, 17);
+            this.cityLabel.TabIndex = 13;
+            this.cityLabel.Text = "City";
+            // 
+            // brgyLabel
+            // 
+            this.brgyLabel.AutoSize = true;
+            this.brgyLabel.Location = new System.Drawing.Point(29, 110);
+            this.brgyLabel.Name = "brgyLabel";
+            this.brgyLabel.Size = new System.Drawing.Size(69, 17);
+            this.brgyLabel.TabIndex = 14;
+            this.brgyLabel.Text = "Barangay";
+            // 
+            // DataLabel
+            // 
+            this.DataLabel.AutoSize = true;
+            this.DataLabel.Location = new System.Drawing.Point(9, 59);
+            this.DataLabel.Name = "DataLabel";
+            this.DataLabel.Size = new System.Drawing.Size(0, 17);
+            this.DataLabel.TabIndex = 15;
+            // 
+            // Instructions
+            // 
+            this.Instructions.AutoSize = true;
+            this.Instructions.Location = new System.Drawing.Point(45, 217);
+            this.Instructions.Name = "Instructions";
+            this.Instructions.Size = new System.Drawing.Size(246, 17);
+            this.Instructions.TabIndex = 16;
+            this.Instructions.Text = "Type the name of the person to track.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.Instructions);
+            this.Controls.Add(this.DataLabel);
+            this.Controls.Add(this.brgyLabel);
+            this.Controls.Add(this.cityLabel);
+            this.Controls.Add(this.provinceLabel);
+            this.Controls.Add(this.ProvinceBox);
+            this.Controls.Add(this.BrgyBox);
+            this.Controls.Add(this.CityBox);
+            this.Controls.Add(this.AgeLabel);
+            this.Controls.Add(this.AgeBox);
             this.Controls.Add(this.Reader);
             this.Controls.Add(this.btnOky);
             this.Controls.Add(this.MidNameLabel);
@@ -140,6 +242,16 @@ namespace Contact_Tracer
         private System.Windows.Forms.Label MidNameLabel;
         private System.Windows.Forms.Button btnOky;
         private System.Windows.Forms.Button Reader;
+        private System.Windows.Forms.TextBox AgeBox;
+        private System.Windows.Forms.Label AgeLabel;
+        private System.Windows.Forms.TextBox CityBox;
+        private System.Windows.Forms.TextBox BrgyBox;
+        private System.Windows.Forms.TextBox ProvinceBox;
+        private System.Windows.Forms.Label provinceLabel;
+        private System.Windows.Forms.Label cityLabel;
+        private System.Windows.Forms.Label brgyLabel;
+        private System.Windows.Forms.Label DataLabel;
+        private System.Windows.Forms.Label Instructions;
     }
 }
 

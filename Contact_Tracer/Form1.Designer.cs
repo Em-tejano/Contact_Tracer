@@ -48,6 +48,14 @@ namespace Contact_Tracer
             this.Instructions = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.ListlistBox = new System.Windows.Forms.ListBox();
+            this.DayofWeek = new System.Windows.Forms.TextBox();
+            this.DayofMonth = new System.Windows.Forms.TextBox();
+            this.Month = new System.Windows.Forms.TextBox();
+            this.Year = new System.Windows.Forms.TextBox();
+            this.DyWeek = new System.Windows.Forms.Label();
+            this.DyMnth = new System.Windows.Forms.Label();
+            this.Mnth = new System.Windows.Forms.Label();
+            this.Yr = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstNameBox
@@ -206,11 +214,83 @@ namespace Contact_Tracer
             // 
             this.ListlistBox.FormattingEnabled = true;
             this.ListlistBox.ItemHeight = 16;
-            this.ListlistBox.Location = new System.Drawing.Point(12, 57);
+            this.ListlistBox.Location = new System.Drawing.Point(12, 89);
             this.ListlistBox.Name = "ListlistBox";
-            this.ListlistBox.Size = new System.Drawing.Size(312, 356);
+            this.ListlistBox.Size = new System.Drawing.Size(312, 324);
             this.ListlistBox.TabIndex = 18;
             this.ListlistBox.Visible = false;
+            // 
+            // DayofWeek
+            // 
+            this.DayofWeek.Location = new System.Drawing.Point(12, 12);
+            this.DayofWeek.Name = "DayofWeek";
+            this.DayofWeek.Size = new System.Drawing.Size(100, 22);
+            this.DayofWeek.TabIndex = 19;
+            this.DayofWeek.Visible = false;
+            // 
+            // DayofMonth
+            // 
+            this.DayofMonth.Location = new System.Drawing.Point(118, 12);
+            this.DayofMonth.Name = "DayofMonth";
+            this.DayofMonth.Size = new System.Drawing.Size(100, 22);
+            this.DayofMonth.TabIndex = 20;
+            this.DayofMonth.Visible = false;
+            // 
+            // Month
+            // 
+            this.Month.Location = new System.Drawing.Point(224, 12);
+            this.Month.Name = "Month";
+            this.Month.Size = new System.Drawing.Size(100, 22);
+            this.Month.TabIndex = 21;
+            this.Month.Visible = false;
+            // 
+            // Year
+            // 
+            this.Year.Location = new System.Drawing.Point(12, 57);
+            this.Year.Name = "Year";
+            this.Year.Size = new System.Drawing.Size(100, 22);
+            this.Year.TabIndex = 22;
+            this.Year.Visible = false;
+            // 
+            // DyWeek
+            // 
+            this.DyWeek.AutoSize = true;
+            this.DyWeek.Location = new System.Drawing.Point(18, 37);
+            this.DyWeek.Name = "DyWeek";
+            this.DyWeek.Size = new System.Drawing.Size(89, 17);
+            this.DyWeek.TabIndex = 23;
+            this.DyWeek.Text = "Day of Week";
+            this.DyWeek.Visible = false;
+            // 
+            // DyMnth
+            // 
+            this.DyMnth.AutoSize = true;
+            this.DyMnth.Location = new System.Drawing.Point(122, 37);
+            this.DyMnth.Name = "DyMnth";
+            this.DyMnth.Size = new System.Drawing.Size(92, 17);
+            this.DyMnth.TabIndex = 24;
+            this.DyMnth.Text = "Day of Month";
+            this.DyMnth.Visible = false;
+            // 
+            // Mnth
+            // 
+            this.Mnth.AutoSize = true;
+            this.Mnth.Location = new System.Drawing.Point(252, 37);
+            this.Mnth.Name = "Mnth";
+            this.Mnth.Size = new System.Drawing.Size(47, 17);
+            this.Mnth.TabIndex = 25;
+            this.Mnth.Text = "Month";
+            this.Mnth.Visible = false;
+            // 
+            // Yr
+            // 
+            this.Yr.AutoSize = true;
+            this.Yr.Location = new System.Drawing.Point(115, 60);
+            this.Yr.Name = "Yr";
+            this.Yr.Size = new System.Drawing.Size(38, 17);
+            this.Yr.TabIndex = 26;
+            this.Yr.Text = "Year";
+            this.Yr.Visible = false;
             // 
             // Form1
             // 
@@ -218,6 +298,14 @@ namespace Contact_Tracer
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.Yr);
+            this.Controls.Add(this.Mnth);
+            this.Controls.Add(this.DyMnth);
+            this.Controls.Add(this.DyWeek);
+            this.Controls.Add(this.Year);
+            this.Controls.Add(this.Month);
+            this.Controls.Add(this.DayofMonth);
+            this.Controls.Add(this.DayofWeek);
             this.Controls.Add(this.Reader);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.Instructions);
@@ -269,6 +357,14 @@ namespace Contact_Tracer
         private System.Windows.Forms.Label Instructions;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox ListlistBox;
+        private System.Windows.Forms.TextBox DayofWeek;
+        private System.Windows.Forms.TextBox DayofMonth;
+        private System.Windows.Forms.TextBox Month;
+        private System.Windows.Forms.TextBox Year;
+        private System.Windows.Forms.Label DyWeek;
+        private System.Windows.Forms.Label DyMnth;
+        private System.Windows.Forms.Label Mnth;
+        private System.Windows.Forms.Label Yr;
     }
 }
 

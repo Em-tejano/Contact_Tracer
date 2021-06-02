@@ -38,9 +38,9 @@ namespace Contact_Tracer
             DirectoryInfo Newpth;
             Newpth = Directory.CreateDirectory(pth);
             StreamWriter OutputFile;
-            DateTime date = DateTime.Now;
-            OutputFile = File.AppendText(Newpth + "/" + NameVar + ".txt");
-            OutputFile.WriteLine("=====" + date + "=====");
+            string date = DateTime.Now.ToLongDateString().ToUpper();
+            OutputFile = File.AppendText(Newpth + "/" + date + ".txt");
+            OutputFile.WriteLine("=====" + NameVar + "=====");
             OutputFile.WriteLine("Age: " + AgeBox.Text.ToUpper());
             OutputFile.WriteLine("Address: " + BrgyBox.Text.ToUpper() + ", " + CityBox.Text.ToUpper() + ", " + ProvinceBox.Text.ToUpper());
             OutputFile.Close();
@@ -64,52 +64,71 @@ namespace Contact_Tracer
             btnOky.Visible = false;
             btnAdd.Visible = true;
             ListlistBox.Visible = true;
-            string NameVar;
-            if (MidNameBox.Text.Length > 0)
-            {
-                NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper() + ", " + MidNameBox.Text.ToUpper();
-                //LstNameBox.Text = "";
-                //FrstNameBox.Text = "";
-                //MidNameBox.Text = "";
-            }
-            else
-            {
-                NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper();
-                //LstNameBox.Text = "";
-                //FrstNameBox.Text = "";
-            }
+            FrstNameBox.Visible = false;
+            FrstNameLabel.Visible = false;
+            MidNameBox.Visible = false;
+            MidNameLabel.Visible = false;
+            LstNameBox.Visible = false;
+            LstNameLabel.Visible = false;
+            DyMnth.Visible = true;
+            DyWeek.Visible = true;
+            Mnth.Visible = true;
+            Yr.Visible = true;
+            DayofMonth.Visible = true;
+            DayofWeek.Visible = true;
+            Month.Visible = true;
+            //string NameVar;
+            //if (MidNameBox.Text.Length > 0)
+            //{
+            //    NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper() + ", " + MidNameBox.Text.ToUpper();
+            //    //LstNameBox.Text = "";
+            //    //FrstNameBox.Text = "";
+            //    //MidNameBox.Text = "";
+            //}
+            //else
+            //{
+            //    NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper();
+            //    //LstNameBox.Text = "";
+            //    //FrstNameBox.Text = "";
+            //}
             string pth = Environment.CurrentDirectory + "/" + "List";
             StreamReader fileReader;
-            if (NameVar.Length > 2)
+            string date = DayofWeek.Text.ToUpper() + ", " + DayofMonth.Text.ToUpper() + " " + Month.Text.ToUpper() + " " + Year.Text.ToUpper();
+            if (Year.Visible)
             {
-                if (!Directory.Exists(Environment.CurrentDirectory + "/" + "List"))
+                if (date.Length > 2)
                 {
-                    MessageBox.Show("Input a data first!");
+                    if (!Directory.Exists(Environment.CurrentDirectory + "/" + "List"))
+                    {
+                        MessageBox.Show("Input a data first!");
+                    }
+                    else
+                    {
+                        try
+                        {
+                            fileReader = File.OpenText(pth + "/" + date + ".txt");
+                            while (!fileReader.EndOfStream)
+                            {
+                                ListlistBox.Items.Add(fileReader.ReadLine() + "\n");
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("The date does not exist in the database!");
+                        }
+                    }
+                
                 }
                 else
                 {
-                    try
-                    {
-                        fileReader = File.OpenText(pth + "/" + NameVar + ".txt");
-                        while (!fileReader.EndOfStream)
-                        {
-                            ListlistBox.Items.Add(fileReader.ReadLine() + "\n");
-                        }
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("The name does not exist in the database!");
-                    }
+                    MessageBox.Show("Input a valid date!");
                 }
-                
             }
-            else
-            {
-                
-            }
-            LstNameBox.Text = "";
-            FrstNameBox.Text = "";
-            MidNameBox.Text = "";
+            Year.Visible = true;
+
+            //LstNameBox.Text = "";
+            //FrstNameBox.Text = "";
+            //MidNameBox.Text = "";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -127,6 +146,20 @@ namespace Contact_Tracer
             btnAdd.Visible = false;
             ListlistBox.Visible = false;
             ListlistBox.Items.Clear();
+            FrstNameBox.Visible = true;
+            FrstNameLabel.Visible = true;
+            MidNameBox.Visible = true;
+            MidNameLabel.Visible = true;
+            LstNameBox.Visible = true;
+            LstNameLabel.Visible = true;
+            DyMnth.Visible = false;
+            DyWeek.Visible = false;
+            Mnth.Visible = false;
+            Yr.Visible = false;
+            DayofMonth.Visible = false;
+            DayofWeek.Visible = false;
+            Month.Visible = false;
+            Year.Visible = false;
         }
     }
 }

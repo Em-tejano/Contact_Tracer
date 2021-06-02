@@ -195,11 +195,11 @@ namespace Contact_Tracer
             // Instructions
             // 
             this.Instructions.AutoSize = true;
-            this.Instructions.Location = new System.Drawing.Point(45, 217);
+            this.Instructions.Location = new System.Drawing.Point(93, 217);
             this.Instructions.Name = "Instructions";
-            this.Instructions.Size = new System.Drawing.Size(246, 17);
+            this.Instructions.Size = new System.Drawing.Size(151, 17);
             this.Instructions.TabIndex = 16;
-            this.Instructions.Text = "Type the name of the person to track.";
+            this.Instructions.Text = "Type the date to track.";
             // 
             // btnAdd
             // 

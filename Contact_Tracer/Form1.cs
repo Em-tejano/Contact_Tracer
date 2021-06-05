@@ -46,6 +46,7 @@ namespace Contact_Tracer
             OutputFile.WriteLine("Contact Number: " + ContactNum.Text);
             OutputFile.WriteLine("Address: " + BrgyBox.Text.ToUpper() + ", " + CityBox.Text.ToUpper() + ", " + ProvinceBox.Text.ToUpper());
             OutputFile.Close();
+            File.Encrypt((Directory.GetCurrentDirectory()).ToString() + "/" + "List");
             AgeBox.Text = "";
             CityBox.Text = "";
             BrgyBox.Text = "";
@@ -82,20 +83,6 @@ namespace Contact_Tracer
             Month.Visible = true;
             ContactNum.Visible = false;
             ContactNumLabel.Visible = false;
-            //string NameVar;
-            //if (MidNameBox.Text.Length > 0)
-            //{
-            //    NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper() + ", " + MidNameBox.Text.ToUpper();
-            //    //LstNameBox.Text = "";
-            //    //FrstNameBox.Text = "";
-            //    //MidNameBox.Text = "";
-            //}
-            //else
-            //{
-            //    NameVar = LstNameBox.Text.ToUpper() + ", " + FrstNameBox.Text.ToUpper();
-            //    //LstNameBox.Text = "";
-            //    //FrstNameBox.Text = "";
-            //}
             string pth = Environment.CurrentDirectory + "/" + "List";
             StreamReader fileReader;
             string date = DayofWeek.Text.ToUpper() + ", " + DayofMonth.Text.ToUpper() + " " + Month.Text.ToUpper() + " " + Year.Text.ToUpper();
@@ -130,10 +117,6 @@ namespace Contact_Tracer
                 }
             }
             Year.Visible = true;
-
-            //LstNameBox.Text = "";
-            //FrstNameBox.Text = "";
-            //MidNameBox.Text = "";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

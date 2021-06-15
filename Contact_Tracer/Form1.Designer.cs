@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracer
 {
-    partial class Form1
+    partial class Contact_Tracing
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Contact_Tracer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact_Tracing));
             this.LstNameBox = new System.Windows.Forms.TextBox();
             this.LstNameLabel = new System.Windows.Forms.Label();
             this.FrstNameBox = new System.Windows.Forms.TextBox();
@@ -62,57 +63,64 @@ namespace Contact_Tracer
             // 
             // LstNameBox
             // 
-            this.LstNameBox.Location = new System.Drawing.Point(12, 12);
+            this.LstNameBox.Location = new System.Drawing.Point(9, 10);
+            this.LstNameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LstNameBox.Name = "LstNameBox";
-            this.LstNameBox.Size = new System.Drawing.Size(100, 22);
+            this.LstNameBox.Size = new System.Drawing.Size(76, 20);
             this.LstNameBox.TabIndex = 0;
             // 
             // LstNameLabel
             // 
             this.LstNameLabel.AutoSize = true;
-            this.LstNameLabel.Location = new System.Drawing.Point(26, 37);
+            this.LstNameLabel.Location = new System.Drawing.Point(20, 30);
+            this.LstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LstNameLabel.Name = "LstNameLabel";
-            this.LstNameLabel.Size = new System.Drawing.Size(76, 17);
+            this.LstNameLabel.Size = new System.Drawing.Size(58, 13);
             this.LstNameLabel.TabIndex = 1;
             this.LstNameLabel.Text = "Last Name";
             // 
             // FrstNameBox
             // 
-            this.FrstNameBox.Location = new System.Drawing.Point(118, 12);
+            this.FrstNameBox.Location = new System.Drawing.Point(88, 10);
+            this.FrstNameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FrstNameBox.Name = "FrstNameBox";
-            this.FrstNameBox.Size = new System.Drawing.Size(100, 22);
+            this.FrstNameBox.Size = new System.Drawing.Size(76, 20);
             this.FrstNameBox.TabIndex = 1;
             // 
             // FrstNameLabel
             // 
             this.FrstNameLabel.AutoSize = true;
-            this.FrstNameLabel.Location = new System.Drawing.Point(131, 37);
+            this.FrstNameLabel.Location = new System.Drawing.Point(98, 30);
+            this.FrstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FrstNameLabel.Name = "FrstNameLabel";
-            this.FrstNameLabel.Size = new System.Drawing.Size(76, 17);
+            this.FrstNameLabel.Size = new System.Drawing.Size(57, 13);
             this.FrstNameLabel.TabIndex = 3;
             this.FrstNameLabel.Text = "First Name";
             // 
             // MidNameBox
             // 
-            this.MidNameBox.Location = new System.Drawing.Point(224, 12);
+            this.MidNameBox.Location = new System.Drawing.Point(168, 10);
+            this.MidNameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MidNameBox.Name = "MidNameBox";
-            this.MidNameBox.Size = new System.Drawing.Size(100, 22);
+            this.MidNameBox.Size = new System.Drawing.Size(76, 20);
             this.MidNameBox.TabIndex = 2;
             // 
             // MidNameLabel
             // 
             this.MidNameLabel.AutoSize = true;
-            this.MidNameLabel.Location = new System.Drawing.Point(231, 37);
+            this.MidNameLabel.Location = new System.Drawing.Point(173, 30);
+            this.MidNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MidNameLabel.Name = "MidNameLabel";
-            this.MidNameLabel.Size = new System.Drawing.Size(90, 17);
+            this.MidNameLabel.Size = new System.Drawing.Size(69, 13);
             this.MidNameLabel.TabIndex = 5;
             this.MidNameLabel.Text = "Middle Name";
             // 
             // btnOky
             // 
-            this.btnOky.Location = new System.Drawing.Point(12, 415);
+            this.btnOky.Location = new System.Drawing.Point(9, 337);
+            this.btnOky.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOky.Name = "btnOky";
-            this.btnOky.Size = new System.Drawing.Size(112, 23);
+            this.btnOky.Size = new System.Drawing.Size(84, 19);
             this.btnOky.TabIndex = 8;
             this.btnOky.Text = "Ok";
             this.btnOky.UseVisualStyleBackColor = true;
@@ -120,9 +128,10 @@ namespace Contact_Tracer
             // 
             // Reader
             // 
-            this.Reader.Location = new System.Drawing.Point(212, 415);
+            this.Reader.Location = new System.Drawing.Point(159, 337);
+            this.Reader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Reader.Name = "Reader";
-            this.Reader.Size = new System.Drawing.Size(112, 23);
+            this.Reader.Size = new System.Drawing.Size(84, 19);
             this.Reader.TabIndex = 10;
             this.Reader.Text = "Read Data";
             this.Reader.UseVisualStyleBackColor = true;
@@ -130,82 +139,92 @@ namespace Contact_Tracer
             // 
             // AgeBox
             // 
-            this.AgeBox.Location = new System.Drawing.Point(12, 102);
+            this.AgeBox.Location = new System.Drawing.Point(9, 83);
+            this.AgeBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AgeBox.Name = "AgeBox";
-            this.AgeBox.Size = new System.Drawing.Size(100, 22);
+            this.AgeBox.Size = new System.Drawing.Size(76, 20);
             this.AgeBox.TabIndex = 7;
             // 
             // AgeLabel
             // 
             this.AgeLabel.AutoSize = true;
-            this.AgeLabel.Location = new System.Drawing.Point(46, 127);
+            this.AgeLabel.Location = new System.Drawing.Point(34, 103);
+            this.AgeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AgeLabel.Name = "AgeLabel";
-            this.AgeLabel.Size = new System.Drawing.Size(33, 17);
+            this.AgeLabel.Size = new System.Drawing.Size(26, 13);
             this.AgeLabel.TabIndex = 8;
             this.AgeLabel.Text = "Age";
             // 
             // CityBox
             // 
-            this.CityBox.Location = new System.Drawing.Point(118, 57);
+            this.CityBox.Location = new System.Drawing.Point(88, 46);
+            this.CityBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CityBox.Name = "CityBox";
-            this.CityBox.Size = new System.Drawing.Size(100, 22);
+            this.CityBox.Size = new System.Drawing.Size(76, 20);
             this.CityBox.TabIndex = 5;
             // 
             // BrgyBox
             // 
-            this.BrgyBox.Location = new System.Drawing.Point(12, 57);
+            this.BrgyBox.Location = new System.Drawing.Point(9, 46);
+            this.BrgyBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BrgyBox.Name = "BrgyBox";
-            this.BrgyBox.Size = new System.Drawing.Size(100, 22);
+            this.BrgyBox.Size = new System.Drawing.Size(76, 20);
             this.BrgyBox.TabIndex = 4;
             // 
             // ProvinceBox
             // 
-            this.ProvinceBox.Location = new System.Drawing.Point(224, 57);
+            this.ProvinceBox.Location = new System.Drawing.Point(168, 46);
+            this.ProvinceBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProvinceBox.Name = "ProvinceBox";
-            this.ProvinceBox.Size = new System.Drawing.Size(100, 22);
+            this.ProvinceBox.Size = new System.Drawing.Size(76, 20);
             this.ProvinceBox.TabIndex = 6;
             // 
             // provinceLabel
             // 
             this.provinceLabel.AutoSize = true;
-            this.provinceLabel.Location = new System.Drawing.Point(243, 82);
+            this.provinceLabel.Location = new System.Drawing.Point(182, 67);
+            this.provinceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.provinceLabel.Name = "provinceLabel";
-            this.provinceLabel.Size = new System.Drawing.Size(63, 17);
+            this.provinceLabel.Size = new System.Drawing.Size(49, 13);
             this.provinceLabel.TabIndex = 12;
             this.provinceLabel.Text = "Province";
             // 
             // cityLabel
             // 
             this.cityLabel.AutoSize = true;
-            this.cityLabel.Location = new System.Drawing.Point(152, 82);
+            this.cityLabel.Location = new System.Drawing.Point(114, 67);
+            this.cityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cityLabel.Name = "cityLabel";
-            this.cityLabel.Size = new System.Drawing.Size(31, 17);
+            this.cityLabel.Size = new System.Drawing.Size(24, 13);
             this.cityLabel.TabIndex = 13;
             this.cityLabel.Text = "City";
             // 
             // brgyLabel
             // 
             this.brgyLabel.AutoSize = true;
-            this.brgyLabel.Location = new System.Drawing.Point(29, 82);
+            this.brgyLabel.Location = new System.Drawing.Point(22, 67);
+            this.brgyLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.brgyLabel.Name = "brgyLabel";
-            this.brgyLabel.Size = new System.Drawing.Size(69, 17);
+            this.brgyLabel.Size = new System.Drawing.Size(52, 13);
             this.brgyLabel.TabIndex = 14;
             this.brgyLabel.Text = "Barangay";
             // 
             // Instructions
             // 
             this.Instructions.AutoSize = true;
-            this.Instructions.Location = new System.Drawing.Point(93, 217);
+            this.Instructions.Location = new System.Drawing.Point(70, 176);
+            this.Instructions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Instructions.Name = "Instructions";
-            this.Instructions.Size = new System.Drawing.Size(151, 17);
+            this.Instructions.Size = new System.Drawing.Size(115, 13);
             this.Instructions.TabIndex = 16;
             this.Instructions.Text = "Type the date to track.";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 415);
+            this.btnAdd.Location = new System.Drawing.Point(9, 337);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(112, 23);
+            this.btnAdd.Size = new System.Drawing.Size(84, 19);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Add Data";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -215,51 +234,56 @@ namespace Contact_Tracer
             // ListlistBox
             // 
             this.ListlistBox.FormattingEnabled = true;
-            this.ListlistBox.ItemHeight = 16;
-            this.ListlistBox.Location = new System.Drawing.Point(12, 89);
+            this.ListlistBox.Location = new System.Drawing.Point(9, 72);
+            this.ListlistBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ListlistBox.Name = "ListlistBox";
-            this.ListlistBox.Size = new System.Drawing.Size(312, 324);
+            this.ListlistBox.Size = new System.Drawing.Size(235, 264);
             this.ListlistBox.TabIndex = 18;
             this.ListlistBox.Visible = false;
             // 
             // DayofWeek
             // 
-            this.DayofWeek.Location = new System.Drawing.Point(12, 12);
+            this.DayofWeek.Location = new System.Drawing.Point(9, 10);
+            this.DayofWeek.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DayofWeek.Name = "DayofWeek";
-            this.DayofWeek.Size = new System.Drawing.Size(100, 22);
+            this.DayofWeek.Size = new System.Drawing.Size(76, 20);
             this.DayofWeek.TabIndex = 19;
             this.DayofWeek.Visible = false;
             // 
             // DayofMonth
             // 
-            this.DayofMonth.Location = new System.Drawing.Point(118, 12);
+            this.DayofMonth.Location = new System.Drawing.Point(88, 10);
+            this.DayofMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DayofMonth.Name = "DayofMonth";
-            this.DayofMonth.Size = new System.Drawing.Size(100, 22);
+            this.DayofMonth.Size = new System.Drawing.Size(76, 20);
             this.DayofMonth.TabIndex = 20;
             this.DayofMonth.Visible = false;
             // 
             // Month
             // 
-            this.Month.Location = new System.Drawing.Point(224, 12);
+            this.Month.Location = new System.Drawing.Point(168, 10);
+            this.Month.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Month.Name = "Month";
-            this.Month.Size = new System.Drawing.Size(100, 22);
+            this.Month.Size = new System.Drawing.Size(76, 20);
             this.Month.TabIndex = 21;
             this.Month.Visible = false;
             // 
             // Year
             // 
-            this.Year.Location = new System.Drawing.Point(12, 57);
+            this.Year.Location = new System.Drawing.Point(9, 46);
+            this.Year.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Year.Name = "Year";
-            this.Year.Size = new System.Drawing.Size(100, 22);
+            this.Year.Size = new System.Drawing.Size(76, 20);
             this.Year.TabIndex = 22;
             this.Year.Visible = false;
             // 
             // DyWeek
             // 
             this.DyWeek.AutoSize = true;
-            this.DyWeek.Location = new System.Drawing.Point(18, 37);
+            this.DyWeek.Location = new System.Drawing.Point(14, 30);
+            this.DyWeek.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DyWeek.Name = "DyWeek";
-            this.DyWeek.Size = new System.Drawing.Size(89, 17);
+            this.DyWeek.Size = new System.Drawing.Size(70, 13);
             this.DyWeek.TabIndex = 23;
             this.DyWeek.Text = "Day of Week";
             this.DyWeek.Visible = false;
@@ -267,9 +291,10 @@ namespace Contact_Tracer
             // DyMnth
             // 
             this.DyMnth.AutoSize = true;
-            this.DyMnth.Location = new System.Drawing.Point(122, 37);
+            this.DyMnth.Location = new System.Drawing.Point(92, 30);
+            this.DyMnth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DyMnth.Name = "DyMnth";
-            this.DyMnth.Size = new System.Drawing.Size(92, 17);
+            this.DyMnth.Size = new System.Drawing.Size(71, 13);
             this.DyMnth.TabIndex = 24;
             this.DyMnth.Text = "Day of Month";
             this.DyMnth.Visible = false;
@@ -277,9 +302,10 @@ namespace Contact_Tracer
             // Mnth
             // 
             this.Mnth.AutoSize = true;
-            this.Mnth.Location = new System.Drawing.Point(252, 37);
+            this.Mnth.Location = new System.Drawing.Point(189, 30);
+            this.Mnth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Mnth.Name = "Mnth";
-            this.Mnth.Size = new System.Drawing.Size(47, 17);
+            this.Mnth.Size = new System.Drawing.Size(37, 13);
             this.Mnth.TabIndex = 25;
             this.Mnth.Text = "Month";
             this.Mnth.Visible = false;
@@ -287,35 +313,38 @@ namespace Contact_Tracer
             // Yr
             // 
             this.Yr.AutoSize = true;
-            this.Yr.Location = new System.Drawing.Point(115, 60);
+            this.Yr.Location = new System.Drawing.Point(86, 49);
+            this.Yr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Yr.Name = "Yr";
-            this.Yr.Size = new System.Drawing.Size(38, 17);
+            this.Yr.Size = new System.Drawing.Size(29, 13);
             this.Yr.TabIndex = 26;
             this.Yr.Text = "Year";
             this.Yr.Visible = false;
             // 
             // ContactNum
             // 
-            this.ContactNum.Location = new System.Drawing.Point(118, 102);
+            this.ContactNum.Location = new System.Drawing.Point(88, 83);
+            this.ContactNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ContactNum.Name = "ContactNum";
-            this.ContactNum.Size = new System.Drawing.Size(206, 22);
+            this.ContactNum.Size = new System.Drawing.Size(156, 20);
             this.ContactNum.TabIndex = 8;
             // 
             // ContactNumLabel
             // 
             this.ContactNumLabel.AutoSize = true;
-            this.ContactNumLabel.Location = new System.Drawing.Point(165, 127);
+            this.ContactNumLabel.Location = new System.Drawing.Point(124, 103);
+            this.ContactNumLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ContactNumLabel.Name = "ContactNumLabel";
-            this.ContactNumLabel.Size = new System.Drawing.Size(110, 17);
+            this.ContactNumLabel.Size = new System.Drawing.Size(84, 13);
             this.ContactNumLabel.TabIndex = 28;
             this.ContactNumLabel.Text = "Contact Number";
             // 
-            // Form1
+            // Contact_Tracing
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 450);
+            this.ClientSize = new System.Drawing.Size(252, 366);
             this.Controls.Add(this.ContactNumLabel);
             this.Controls.Add(this.ContactNum);
             this.Controls.Add(this.AgeLabel);
@@ -346,11 +375,13 @@ namespace Contact_Tracer
             this.Controls.Add(this.LstNameBox);
             this.Controls.Add(this.ListlistBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Contact_Tracing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Contact Tracing";
             this.ResumeLayout(false);
             this.PerformLayout();
 

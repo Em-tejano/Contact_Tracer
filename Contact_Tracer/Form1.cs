@@ -11,9 +11,9 @@ using System.IO;
 
 namespace Contact_Tracer
 {
-    public partial class Form1 : Form
+    public partial class Contact_Tracing : Form
     {
-        public Form1()
+        public Contact_Tracing()
         {
             InitializeComponent();
         }
@@ -46,7 +46,6 @@ namespace Contact_Tracer
             OutputFile.WriteLine("Contact Number: " + ContactNum.Text);
             OutputFile.WriteLine("Address: " + BrgyBox.Text.ToUpper() + ", " + CityBox.Text.ToUpper() + ", " + ProvinceBox.Text.ToUpper());
             OutputFile.Close();
-            File.Encrypt((Directory.GetCurrentDirectory()).ToString() + "/" + "List");
             AgeBox.Text = "";
             CityBox.Text = "";
             BrgyBox.Text = "";
@@ -115,6 +114,10 @@ namespace Contact_Tracer
                 {
                     MessageBox.Show("Input a valid date!");
                 }
+                DayofMonth.Text = "";
+                DayofWeek.Text = "";
+                Month.Text = "";
+                Year.Text = "";
             }
             Year.Visible = true;
         }
